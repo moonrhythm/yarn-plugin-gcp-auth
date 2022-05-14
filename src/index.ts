@@ -46,10 +46,13 @@ const plugin: Plugin<NpmHooks> = {
       if (!registry.includes('npm.pkg.dev/')) {
         return null;
       }
-      const cache = configuration.get('gcpAccessToken');
-      let token: string = cache.get('token');
-      if (!token || cache.get('expiresAt') < Date.now() + 1000) {
-        token = await refreshToken(configuration);
+      let token: string = process.env.GCP_AUTH_TOKEN;
+      if (!token) {
+        const cache = configuration.get('gcpAccessToken');
+        token = cache.get('token');
+        if (!token || cache.get('expiresAt') < Date.now() + 1000) {
+          token = await refreshToken(configuration);
+        }
       }
 
       return `Bearer ${token}`;
