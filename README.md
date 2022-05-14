@@ -1,5 +1,5 @@
 # yarn-plugin-gcp-auth
-[![Github Downloads](https://img.shields.io/github/downloads/AndyClausen/yarn-plugin-gcp-auth/total)]()
+[![Github Downloads](https://img.shields.io/github/downloads/moonrhythm/yarn-plugin-gcp-auth/total)]()
 
 Yarn Berry plugin to use gcloud auth for authentication to Google Artifact Registry packages
 
@@ -14,11 +14,11 @@ Yarn Berry plugin to use gcloud auth for authentication to Google Artifact Regis
 
 To install the latest release use
 ```sh
-yarn plugin import https://github.com/AndyClausen/yarn-plugin-gcp-auth/releases/latest/download/plugin-gcp-auth.js
+yarn plugin import https://github.com/moonrhythm/yarn-plugin-gcp-auth/releases/latest/download/plugin-gcp-auth.js
 ```
 or to install a specific version use
 ```sh
-yarn plugin import https://github.com/AndyClausen/yarn-plugin-gcp-auth/releases/download/X.Y.Z/plugin-gcp-auth.js
+yarn plugin import https://github.com/moonrhythm/yarn-plugin-gcp-auth/releases/download/X.Y.Z/plugin-gcp-auth.js
 ```
 
 Then you will need to setup your .yarnrc.yml file to connect with Google Artifact Registry
